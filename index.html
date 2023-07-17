@@ -59,18 +59,18 @@
   <div class="title">Overview</div>
   <div class="body">
     Sleep plays an important role for humans and work on automated sleep staging using machines has 
-    important implications. Most of the current state-of-the-art approaches <font color=red>**only consider one aspect 
-    of the spatial or temporal characteristics of the brain**</font> during sleep, resulting in inadequate modelling 
+    important implications. Most of the current state-of-the-art approaches <font color=red>only consider one aspect 
+    of the spatial or temporal characteristics of the brain</font> during sleep, resulting in inadequate modelling 
     of the spatio-temporal characteristics of the brain's sleep process. A few works have taken into account 
-    the spatio-temporal characteristics of the brain, however, these works <font color=red>**lack representation of the 
-    spatial-temporal relationships in the brain**</font>, resulting in models that are somewhat less interpretable.
+    the spatio-temporal characteristics of the brain, however, these works <font color=red>lack representation of the 
+    spatial-temporal relationships in the brain</font>, resulting in models that are somewhat less interpretable.
 
 The Bayesian Spatio-Temporal Transformer (BSTT) model proposed in this paper introduces a relational 
-    inference method that can <font color=red>**automatically infer the spatio-temporal relationships in the brain during 
-    sleep and generate spatio-temporal relationship inference maps to serve spatio-temporal feature extraction**</font>. 
+    inference method that can <font color=red>automatically infer the spatio-temporal relationships in the brain during 
+    sleep and generate spatio-temporal relationship inference maps to serve spatio-temporal feature extraction</font>. 
     The model also adopts an advanced Transformer architecture to capture spatio-temporal features, which 
     further enhances the effectiveness of the model. Extensive experiments have shown that our model achieves 
-    the most advanced results available, while <font color=red>**having a degree of interpretability**</font>.
+    the most advanced results available, while <font color=red>having a degree of interpretability</font>.
   </div>
 </div>
 <!-- === Overview Section Ends === -->
@@ -84,19 +84,9 @@ The Bayesian Spatio-Temporal Transformer (BSTT) model proposed in this paper int
         <td><img src="./fig/MA.png" width="90%"></td>
       </tr>
     </table>
-    Sleep plays an important role for humans and work on automated sleep staging using machines has 
-    important implications. Most of the current state-of-the-art approaches only consider one aspect 
-    of the spatial or temporal characteristics of the brain during sleep, resulting in inadequate modelling 
-    of the spatio-temporal characteristics of the brain's sleep process. A few works have taken into account 
-    the spatio-temporal characteristics of the brain, however, these works lack representation of the 
-    spatial-temporal relationships in the brain, resulting in models that are somewhat less interpretable.
-
-The Bayesian Spatio-Temporal Transformer (BSTT) model proposed in this paper introduces a relational 
-    inference method that can automatically infer the spatio-temporal relationships in the brain during 
-    sleep and generate spatio-temporal relationship inference maps to serve spatio-temporal feature extraction. 
-    The model also adopts an advanced Transformer architecture to capture spatio-temporal features, which 
-    further enhances the effectiveness of the model. Extensive experiments have shown that our model achieves 
-    the most advanced results available, while having a degree of interpretability.
+    The overall architecture of the proposed Bayesian spatial-temporal transformer for sleep staging. BSTT includes two Bayesian transformer modules, a spatial Bayesian transformer and a 
+    temporal Bayesian transformer. For each transformer module, the input features are passed through the position embedding and layernorm layer. 
+    Then the multi-head Bayesian relation inference component infers the object’s spatial or temporal relation and captures the spatial-temporal features. The residual connection is used to prevent overfitting and gradient disappearance.
   </div>
 </div>
 <!-- === Architecture Section Ends === -->
