@@ -128,20 +128,15 @@ The Bayesian Spatio-Temporal Transformer (BSTT) model proposed in this paper int
     We used eight baseline methods for comparison with our methodology, as follows:
     <h4>Baselines:</h4>
     <ul>
-      <li> MCNN: a deep learning sleep staging method utilizing multivariate multimodal PSG signals.</li>
-      <li>  MMCNN: a multi-scale convolutional neural network for EEG signal classification.</li>
-      <li>MLP+LSTM: a mixed neural network, which combines multilayer perceptron (MLP) and LSTM.</li>
-      <li>DeepSleepNet: a mixed sleep staging method utilizing CNN and Bi-LSTM.</li>
-      <li>TinySleepNet: an efficient and lightweight EEG sleep staging network.</li>
-      <li>U-Time: a temporal fully convolutional network based on U-Net architecture for sleep staging.</li>
-      <li>GraphSleepNet: a spatial-temporal graph convolutional neural network that can adaptively learn spatial-temporal features.</li>
-      <li>Spatial-Temporal Transformer: a sleep staging method using transformer to extract spatial-temporal features.</li>
+      <li> <b>MCNN</b>: a deep learning sleep staging method utilizing multivariate multimodal PSG signals.</li>
+      <li>  <b>MMCNN</b>: a multi-scale convolutional neural network for EEG signal classification.</li>
+      <li><b>MLP+LSTM</b>: a mixed neural network, which combines multilayer perceptron (MLP) and LSTM.</li>
+      <li><b>DeepSleepNet</b>: a mixed sleep staging method utilizing CNN and Bi-LSTM.</li>
+      <li><b>TinySleepNet</b>: an efficient and lightweight EEG sleep staging network.</li>
+      <li><b>U-Time</b>: a temporal fully convolutional network based on U-Net architecture for sleep staging.</li>
+      <li><b>GraphSleepNet</b>: a spatial-temporal graph convolutional neural network that can adaptively learn spatial-temporal features.</li>
+      <li><b>Spatial-Temporal Transformer</b>: a sleep staging method using transformer to extract spatial-temporal features.</li>
     </ul>
-    <table width="100%" style="margin: 20pt 0; text-align: center;">
-      <tr>
-        <td><img src="./fig/baseline.png" width="90%"></td>
-      </tr>
-    </table>
 
     Compared to other baseline methods, BSTT achieved the best performance on both datasets. Specifically, MCNN and MMCNN utilise CNN models to automatically extract sleep features, while RNN-based methods such as DeepSleepNet and 
     TinySleepNet focus on the temporal context in sleep data and model multi-level temporal features during sleep for sleep staging. In addition, GraphSleepNet and ST-Transformer simultaneously modelled the spatial-temporal relationships during sleep with 
