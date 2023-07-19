@@ -27,7 +27,7 @@
                 <td>
                     <div class="logo"
                          style="
-                         width: 80pt;
+                         width: 50pt;
                          vertical-align: text-top;
                          text-align: center;
                          ">
@@ -52,7 +52,7 @@
                          text-align: center;
                          ">
                         <a href="https://yuchenliu1225.github.io/" target="_blank">
-                            <img style=" width: 135pt;" src="./fig/CASIA.jpg">
+                            <img style=" width: 140pt;" src="./fig/CASIA.jpg">
                         </a>
                     </div>
 
@@ -126,6 +126,17 @@ The Bayesian Spatio-Temporal Transformer (BSTT) model proposed in this paper int
   <div class="title">Results</div>
   <div class="body">
     We used eight baseline methods for comparison with our methodology, as follows:
+    <h4>Baselines:</h4>
+    <ul>
+      <li> MCNN: a deep learning sleep staging method utilizing multivariate multimodal PSG signals.</li>
+      <li>  MMCNN: a multi-scale convolutional neural network for EEG signal classification.</li>
+      <li>MLP+LSTM: a mixed neural network, which combines multilayer perceptron (MLP) and LSTM.</li>
+      <li>DeepSleepNet: a mixed sleep staging method utilizing CNN and Bi-LSTM.</li>
+      <li>TinySleepNet: an efficient and lightweight EEG sleep staging network.</li>
+      <li>U-Time: a temporal fully convolutional network based on U-Net architecture for sleep staging.</li>
+      <li>GraphSleepNet: a spatial-temporal graph convolutional neural network that can adaptively learn spatial-temporal features.</li>
+      <li>Spatial-Temporal Transformer: a sleep staging method using transformer to extract spatial-temporal features.</li>
+    </ul>
     <table width="100%" style="margin: 20pt 0; text-align: center;">
       <tr>
         <td><img src="./fig/baseline.png" width="90%"></td>
